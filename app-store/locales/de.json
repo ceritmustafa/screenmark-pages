@@ -1,0 +1,18 @@
+{
+  "locale": "de",
+  "name": "ScreenMark",
+  "subtitle": "Zoomen, markieren & aufnehmen",
+  "promotionalText": "Live-Zoom, Freeze Frame, Whiteboard und Aufnahme direkt aus der Menüleiste steuern.",
+  "description": "ScreenMark ist ein lokal arbeitendes Präsentations-Overlay für macOS. Nutzen Sie Live-Zoom, Zeichen- und Textwerkzeuge, Freeze Frame, Whiteboard-Modus, Timer, Schnappschüsse und Aufnahmen, ohne die laufende Präsentation zu verlassen. Die Gratis-Stufe deckt den Kern ab; ScreenMark Pro ergänzt Aufnahme, Live-Zoom, erweiterte Markierungswerkzeuge, eigene Kurzbefehle und zusätzliche Exportoptionen.",
+  "keywords": [
+    "Präsentation",
+    "Bildschirmaufnahme",
+    "Zoom",
+    "Annotation",
+    "Whiteboard",
+    "Menüleiste"
+  ],
+  "marketingURL": "https://ceritmustafa.github.io/ScreenMark/",
+  "supportURL": "https://ceritmustafa.github.io/ScreenMark/support/",
+  "privacyPolicyURL": "https://ceritmustafa.github.io/ScreenMark/privacy/"
+}

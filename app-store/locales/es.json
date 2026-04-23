@@ -1,0 +1,18 @@
+{
+  "locale": "es",
+  "name": "ScreenMark",
+  "subtitle": "Presenta, anota y graba",
+  "promotionalText": "Controle el zoom en vivo, el congelado, la pizarra y la grabación desde la barra de menús.",
+  "description": "ScreenMark es una superposición de presentación local para macOS. Use zoom en vivo, herramientas de dibujo y texto, congelado de pantalla, modo pizarra, temporizadores, capturas y grabación sin salir de la app que está mostrando. El nivel gratuito cubre lo esencial; ScreenMark Pro añade grabación, zoom en vivo, herramientas avanzadas de anotación, atajos personalizados y más opciones de exportación.",
+  "keywords": [
+    "presentación",
+    "grabación de pantalla",
+    "zoom",
+    "anotación",
+    "pizarra",
+    "barra de menús"
+  ],
+  "marketingURL": "https://ceritmustafa.github.io/ScreenMark/",
+  "supportURL": "https://ceritmustafa.github.io/ScreenMark/support/",
+  "privacyPolicyURL": "https://ceritmustafa.github.io/ScreenMark/privacy/"
+}

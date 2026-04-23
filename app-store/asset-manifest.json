@@ -1,0 +1,49 @@
+{
+  "screenshots": [
+    {
+      "filename": "screenshot-01-present-with-clarity.png",
+      "size": "2880x1800",
+      "title": "Present with clarity.",
+      "subtitle": "Lead attention with live zoom, cursor focus, and a toolbar that stays out of the way."
+    },
+    {
+      "filename": "screenshot-02-annotate-any-screen.png",
+      "size": "2880x1800",
+      "title": "Annotate any screen.",
+      "subtitle": "Draw, box, arrow, and type on top of presentations, docs, code, or browser content."
+    },
+    {
+      "filename": "screenshot-03-freeze-explain-export.png",
+      "size": "2880x1800",
+      "title": "Freeze, explain, export.",
+      "subtitle": "Pause the screen, mark it up, then save the moment as a reusable artifact."
+    },
+    {
+      "filename": "screenshot-04-switch-to-whiteboard-instantly.png",
+      "size": "2880x1800",
+      "title": "Switch to whiteboard instantly.",
+      "subtitle": "Move from live content to a clean sketch space in one step."
+    },
+    {
+      "filename": "screenshot-05-keep-sessions-on-time.png",
+      "size": "2880x1800",
+      "title": "Keep sessions on time.",
+      "subtitle": "Use a visible break timer without breaking the room's momentum."
+    },
+    {
+      "filename": "screenshot-06-ready-from-your-menu-bar.png",
+      "size": "2880x1800",
+      "title": "Ready from your menu bar.",
+      "subtitle": "Launch tools, shortcuts, and session controls exactly when you need them."
+    }
+  ],
+  "appPreview": {
+    "filename": "app-preview-01.mp4",
+    "posterFrameFilename": "app-preview-01-poster.png",
+    "size": "1920x1080",
+    "durationSeconds": {
+      "min": 20,
+      "max": 25
+    }
+  }
+}

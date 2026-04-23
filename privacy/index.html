@@ -1,109 +1,265 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ScreenMark Privacy Policy</title>
-  <meta name="description" content="Privacy policy for ScreenMark on macOS.">
-  <link rel="stylesheet" href="../assets/site.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — ScreenMark</title>
+  <meta name="description" content="ScreenMark Privacy Policy. We don't collect your personal data, run no analytics, and store everything locally on your device." />
+  <meta name="robots" content="index, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../assets/site.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="shell">
-      <a class="brand" href="../">
-        <span class="brand-mark">S</span>
-        <span>ScreenMark</span>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+        <defs>
+          <linearGradient id="lg1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#5b8def"/>
+            <stop offset="100%" stop-color="#9b59b6"/>
+          </linearGradient>
+        </defs>
+        <rect width="34" height="34" rx="9" fill="url(#lg1)"/>
+        <path d="M22.5 8.5L25.5 11.5L13 24L8.5 25.5L10 21L22.5 8.5Z" fill="white" stroke="white" stroke-width=".5" stroke-linejoin="round"/>
+        <path d="M20.5 10.5L23.5 13.5" stroke="rgba(255,255,255,0.55)" stroke-width="1.5" stroke-linecap="round"/>
+        <circle cx="10" cy="24" r="1.5" fill="rgba(255,255,255,0.7)"/>
+      </svg>
+      ScreenMark
+    </a>
+
+    <div class="nav-links">
+      <a href="../index.html#features">Features</a>
+      <a href="../index.html#pricing">Pricing</a>
+      <a href="../privacy/" style="color:var(--text-primary)">Privacy</a>
+      <a href="../support/">Support</a>
+    </div>
+
+    <div class="nav-actions">
+      <a href="https://apps.apple.com/app/id6763122210" class="btn-appstore-nav" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Download
       </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="../">Home</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="nav-mobile" id="navMobile">
+  <a href="../index.html#features">Features</a>
+  <a href="../index.html#pricing">Pricing</a>
+  <a href="../privacy/">Privacy</a>
+  <a href="../support/">Support</a>
+  <a href="https://apps.apple.com/app/id6763122210" target="_blank" rel="noopener">↗ Download on Mac App Store</a>
+</div>
+
+<!-- ============================================================
+     PAGE HERO
+     ============================================================ -->
+<div class="page-hero">
+  <div class="container">
+    <a href="../index.html" class="back-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      Back to ScreenMark
+    </a>
+    <span class="section-tag">Privacy</span>
+    <h1>Privacy Policy</h1>
+    <p class="meta-line">Effective date: January 1, 2025 &nbsp;·&nbsp; Last updated: January 2025</p>
+  </div>
+</div>
+
+<!-- ============================================================
+     CONTENT
+     ============================================================ -->
+<div class="page-content">
+  <div class="container">
+    <div class="prose-wrap">
+
+      <div class="info-callout">
+        <div class="info-callout-icon">🔒</div>
+        <p><strong>The short version:</strong> ScreenMark does not collect, transmit, or sell your personal data. Everything happens on your device. We built this app for presenters who deserve privacy.</p>
+      </div>
+
+      <div class="prose">
+
+        <h2>1. Overview</h2>
+        <p>
+          ScreenMark ("we", "our", or "the app") is a macOS screen annotation and presentation overlay application
+          developed by an independent developer. We are committed to protecting your privacy. This Privacy Policy
+          explains our data practices — what we collect (almost nothing), what we don't collect (almost everything),
+          and how the app operates.
+        </p>
+        <p>
+          By using ScreenMark, you agree to the practices described in this policy. If you do not agree, please
+          discontinue use of the application.
+        </p>
+
+        <h2>2. Information We Do Not Collect</h2>
+        <p>We want to be explicit about what we do <strong>not</strong> collect:</p>
+        <ul>
+          <li>No personal identifying information (name, email address, phone number, address)</li>
+          <li>No usage analytics or telemetry</li>
+          <li>No crash reports sent to our servers (macOS crash reports remain with Apple)</li>
+          <li>No behavioral tracking or user profiling</li>
+          <li>No advertising identifiers</li>
+          <li>No screen content — your screen captures, annotations, and recordings never leave your device</li>
+          <li>No microphone or camera data</li>
+          <li>No location data</li>
+          <li>No keystroke logging (global shortcuts are handled locally via system APIs)</li>
+        </ul>
+
+        <h2>3. Data Stored Locally on Your Device</h2>
+        <p>
+          ScreenMark stores a small amount of data <strong>exclusively on your device</strong> to provide its features:
+        </p>
+        <ul>
+          <li><strong>App Preferences:</strong> Settings you configure (shortcut keys, color choices, default tool, stroke width, whiteboard timer durations) are stored in macOS <code>UserDefaults</code>, which resides in your local app container. This data never leaves your device unless you explicitly enable iCloud sync (see Section 5).</li>
+          <li><strong>Exports:</strong> When you export an annotated snapshot or recording, the file is saved to the location you choose on your Mac. ScreenMark does not retain copies of exports.</li>
+          <li><strong>In-App Purchase State:</strong> Your subscription or lifetime purchase entitlement is managed exclusively through Apple's StoreKit framework. ScreenMark does not store payment information.</li>
+        </ul>
+
+        <h2>4. Apple Services</h2>
+        <p>
+          ScreenMark is distributed through the Mac App Store and uses certain Apple platform services. These services
+          are governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>:
+        </p>
+        <ul>
+          <li><strong>Mac App Store:</strong> Apple processes your purchase and manages app delivery. Apple may collect analytics related to App Store usage per their own policy.</li>
+          <li><strong>StoreKit 2:</strong> Subscription and in-app purchase validation is handled end-to-end by Apple. ScreenMark receives only a verified entitlement status — no payment details.</li>
+          <li><strong>ScreenCaptureKit:</strong> The screen capture framework is used entirely on-device to render the overlay. No screen content is transmitted anywhere.</li>
+        </ul>
+        <p>
+          We have no control over and assume no responsibility for Apple's data practices. We encourage you to
+          review Apple's Privacy Policy for details.
+        </p>
+
+        <h2>5. iCloud Sync (Optional)</h2>
+        <p>
+          ScreenMark includes an optional iCloud sync feature for Pro subscribers. When enabled, your app preferences
+          and settings are synced via Apple's iCloud Key-Value Storage. This means:
+        </p>
+        <ul>
+          <li>Your settings are stored in your personal iCloud account, governed by Apple's privacy practices</li>
+          <li>Only preference data (not screen content or recordings) is synced</li>
+          <li>iCloud sync is <strong>opt-in only</strong> — it is disabled by default</li>
+          <li>You can disable or delete iCloud data at any time from macOS System Settings → Apple ID → iCloud</li>
+        </ul>
+
+        <h2>6. Screen Recording Permission</h2>
+        <p>
+          ScreenMark requests Screen Recording permission to render its overlay on top of your display content.
+          This permission is required by macOS for any app that draws over or captures the screen. Important clarifications:
+        </p>
+        <ul>
+          <li>Screen content is processed entirely in memory, on-device, in real time</li>
+          <li>No screen captures are made unless you explicitly trigger Freeze &amp; Capture or Screen Recording</li>
+          <li>Even when recording, the output file is saved only to a location you choose on your local disk</li>
+          <li>ScreenMark never transmits screen content over the network</li>
+        </ul>
+
+        <h2>7. Accessibility &amp; Input Monitoring Permissions</h2>
+        <p>
+          ScreenMark requests the Accessibility permission to register global keyboard shortcuts that work system-wide.
+          This is a standard macOS requirement for apps that need to respond to hotkeys while other apps are in focus.
+          ScreenMark does not log, record, or transmit keystrokes — it only listens for the specific shortcut
+          combinations you configure.
+        </p>
+
+        <h2>8. Children's Privacy</h2>
+        <p>
+          ScreenMark is not directed at children under 13 years of age. We do not knowingly collect personal
+          information from children. If you are a parent or guardian and believe your child has provided us with
+          personal information, please contact us at <a href="mailto:support@screenmark.app">support@screenmark.app</a>.
+        </p>
+
+        <h2>9. Data Security</h2>
+        <p>
+          Because ScreenMark does not collect or transmit your personal data to external servers, the attack
+          surface for a data breach involving your information is minimal. Your data remains under your control,
+          protected by macOS's built-in security model and sandboxing. Exported files are subject to whatever
+          security you have configured on your Mac.
+        </p>
+
+        <h2>10. Third-Party Services</h2>
+        <p>
+          ScreenMark does not integrate with any third-party analytics platforms, advertising networks, crash
+          reporting services (e.g., Crashlytics, Sentry), or marketing tools. There are no third-party SDKs
+          embedded in the application beyond Apple's first-party frameworks.
+        </p>
+
+        <h2>11. Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. When we do, we will update the "Last updated"
+          date at the top of this page and, if the changes are significant, post a notice in the app or on
+          the App Store listing. We encourage you to review this policy periodically. Continued use of
+          ScreenMark after any changes constitutes your acceptance of the revised policy.
+        </p>
+
+        <h2>12. Contact</h2>
+        <p>
+          If you have any questions, concerns, or requests related to this Privacy Policy or your data, please
+          reach out:
+        </p>
+        <p>
+          <strong>Email:</strong> <a href="mailto:support@screenmark.app">support@screenmark.app</a><br />
+          We aim to respond to all privacy-related inquiries within 5 business days.
+        </p>
+
+      </div><!-- /prose -->
+    </div><!-- /prose-wrap -->
+  </div>
+</div>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <a href="../index.html" class="footer-brand">
+        <svg width="28" height="28" viewBox="0 0 34 34" fill="none">
+          <defs>
+            <linearGradient id="lg2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#5b8def"/>
+              <stop offset="100%" stop-color="#9b59b6"/>
+            </linearGradient>
+          </defs>
+          <rect width="34" height="34" rx="9" fill="url(#lg2)"/>
+          <path d="M22.5 8.5L25.5 11.5L13 24L8.5 25.5L10 21L22.5 8.5Z" fill="white" stroke="white" stroke-width=".5" stroke-linejoin="round"/>
+          <path d="M20.5 10.5L23.5 13.5" stroke="rgba(255,255,255,0.55)" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="10" cy="24" r="1.5" fill="rgba(255,255,255,0.7)"/>
+        </svg>
+        ScreenMark
+      </a>
+
+      <div class="footer-center">
+        <p class="footer-copy">&copy; 2025 ScreenMark. All rights reserved.</p>
+        <p class="footer-copy">Built for macOS with ❤️ — <a href="https://apps.apple.com/app/id6763122210" target="_blank" rel="noopener">Mac App Store</a></p>
+      </div>
+
+      <nav class="footer-links">
+        <a href="../index.html#features">Features</a>
+        <a href="../index.html#pricing">Pricing</a>
+        <a href="../privacy/">Privacy</a>
         <a href="../support/">Support</a>
-        <a href="./">Privacy</a>
       </nav>
     </div>
-  </header>
+  </div>
+</footer>
 
-  <main>
-    <section class="page-hero">
-      <div class="shell">
-        <span class="eyebrow">Privacy policy</span>
-        <h1>ScreenMark keeps presentation work on your Mac.</h1>
-        <p>
-          This privacy policy applies to ScreenMark for macOS. The app is designed to work locally:
-          no ScreenMark account is required, and the app does not upload your presentation content to
-          a ScreenMark-operated server.
-        </p>
-      </div>
-    </section>
+<script>
+  const btn = document.getElementById('hamburger');
+  const menu = document.getElementById('navMobile');
+  btn.addEventListener('click', () => menu.classList.toggle('open'));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+</script>
 
-    <section class="section">
-      <div class="shell two-up">
-        <article class="panel">
-          <h2>Information ScreenMark handles</h2>
-          <div class="accent-rule"></div>
-          <ul class="info-list">
-            <li>
-              <strong>Local settings and diagnostics</strong>
-              <p>Preferences, entitlement cache, and local diagnostic events are stored on your Mac to support the app experience.</p>
-            </li>
-            <li>
-              <strong>Screen and audio data</strong>
-              <p>Screen, microphone, and system audio data are used only when you activate capture features such as zoom, freeze, snip, or recording.</p>
-            </li>
-            <li>
-              <strong>App Store purchase data</strong>
-              <p>Subscriptions and purchases are processed by Apple through StoreKit. ScreenMark reads entitlement state from the App Store to unlock paid features.</p>
-            </li>
-          </ul>
-        </article>
-
-        <article class="panel">
-          <h2>What ScreenMark does not do</h2>
-          <div class="accent-rule"></div>
-          <ul class="info-list">
-            <li>
-              <strong>No user account</strong>
-              <p>You do not need to sign in to use ScreenMark.</p>
-            </li>
-            <li>
-              <strong>No ScreenMark cloud upload</strong>
-              <p>The app does not send your screen content, recordings, annotations, or exports to a ScreenMark server.</p>
-            </li>
-            <li>
-              <strong>No keystroke logging</strong>
-              <p>Accessibility or input monitoring access is used for shortcut handling only and is not used to record typed content.</p>
-            </li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="shell cards-grid">
-        <article class="card">
-          <h3>Permissions</h3>
-          <p>Screen Recording is required for capture features. Microphone access is required only if you choose to record microphone input.</p>
-        </article>
-        <article class="card">
-          <h3>Retention</h3>
-          <p>Files you export or record stay wherever you save them on your Mac unless you move them elsewhere.</p>
-        </article>
-        <article class="card">
-          <h3>Contact</h3>
-          <p>Privacy questions can be sent to <a href="mailto:apple@mustafacerit.com">apple@mustafacerit.com</a>.</p>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="shell">
-      <p>Privacy policy for ScreenMark.</p>
-      <div class="footer-links">
-        <a href="../">Home</a>
-        <a href="../support/">Support</a>
-        <a href="mailto:apple@mustafacerit.com">apple@mustafacerit.com</a>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>

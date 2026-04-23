@@ -96,7 +96,7 @@
 - **Bundle ID**: Signing sertifikası ve App Store Connect hesabıyla hizalanmalı
 - **StoreKit product ID'leri**: Sandbox ortamında test edilmeli
 - **Archive yolu**: `Scripts/archive_mas.sh` ile belgeli; gerçek signing/provisioning ile doğrulanmalı
-- **Privacy Policy URL**: `https://ceritmustafa.github.io/ScreenMark/privacy/` hazır
+- **Privacy Policy URL**: `https://ceritmustafa.github.io/screenmark-pages/privacy/` hazır
 
 ## Security Audit Özeti (2026-04-14)
 

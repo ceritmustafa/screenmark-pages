@@ -12,6 +12,6 @@ Included here:
 
 Public URLs used by the app and by App Store Connect:
 
-- Marketing URL: `https://ceritmustafa.github.io/ScreenMark/`
-- Support URL: `https://ceritmustafa.github.io/ScreenMark/support/`
-- Privacy policy URL: `https://ceritmustafa.github.io/ScreenMark/privacy/`
+- Marketing URL: `https://ceritmustafa.github.io/screenmark-pages/`
+- Support URL: `https://ceritmustafa.github.io/screenmark-pages/support/`
+- Privacy policy URL: `https://ceritmustafa.github.io/screenmark-pages/privacy/`

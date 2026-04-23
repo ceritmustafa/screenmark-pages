@@ -9,9 +9,9 @@
     "ageRatingTarget": "minimum allowed by questionnaire"
   },
   "urls": {
-    "marketing": "https://ceritmustafa.github.io/ScreenMark/",
-    "support": "https://ceritmustafa.github.io/ScreenMark/support/",
-    "privacyPolicy": "https://ceritmustafa.github.io/ScreenMark/privacy/"
+    "marketing": "https://ceritmustafa.github.io/screenmark-pages/",
+    "support": "https://ceritmustafa.github.io/screenmark-pages/support/",
+    "privacyPolicy": "https://ceritmustafa.github.io/screenmark-pages/privacy/"
   },
   "subscriptionGroup": {
     "name": "ScreenMark Pro",

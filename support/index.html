@@ -1,92 +1,237 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Support — ScreenMark</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
-  <link rel="stylesheet" href="../assets/site.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support – ScreenMark</title>
+  <meta name="description" content="Support page for ScreenMark. Permission setup, restore purchases, FAQs, and contact details.">
+  <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
 
-<nav>
-  <div class="nav-inner">
-    <a class="nav-logo" href="/">
-      <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-        <rect width="28" height="28" rx="7" fill="url(#ng)"/>
-        <path d="M8 14h12M14 8v12" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
-        <circle cx="14" cy="14" r="3" fill="#fff" opacity=".9"/>
-        <defs><linearGradient id="ng" x1="0" y1="0" x2="28" y2="28"><stop stop-color="#5b8def"/><stop offset="1" stop-color="#9b59b6"/></linearGradient></defs>
-      </svg>
-      ScreenMark
-    </a>
-    <div class="nav-links">
-      <a href="/">Home</a>
-      <a href="../privacy/">Privacy</a>
+  <header class="site-header">
+    <div class="shell">
+      <a class="brand" href="../">
+        <span class="brand-mark">✏️</span>
+        ScreenMark
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../">Home</a>
+        <a href="./">Support</a>
+        <a href="../privacy/">Privacy</a>
+      </nav>
     </div>
-  </div>
-</nav>
+  </header>
 
-<div class="prose">
-  <h1>Support</h1>
-  <p class="lead">Get help with ScreenMark for Mac.</p>
+  <main>
 
-  <h2>System Requirements</h2>
-  <p>ScreenMark requires <strong>macOS 15.0 (Sequoia) or later</strong> on a Mac. Apple Silicon and Intel Macs are both supported.</p>
+    <div class="page-hero">
+      <span class="eyebrow">Help Center</span>
+      <h1>Support</h1>
+      <p>Permission setup, purchase help, and answers to common questions.</p>
+    </div>
 
-  <h2>Permissions</h2>
-  <p>ScreenMark needs <strong>Screen Recording</strong> permission to function. Go to <strong>System Settings → Privacy &amp; Security → Screen Recording</strong> and enable ScreenMark. Restart the app after granting permission.</p>
+    <section class="section">
+      <div class="shell" style="max-width:900px">
 
-  <h2>Frequently Asked Questions</h2>
-  <div class="faq">
-    <div>
-      <div class="faq-q">The overlay doesn't appear — what do I do?</div>
-      <div class="faq-a">Check that Screen Recording permission is enabled in System Settings and that ScreenMark is running in your menu bar. Try quitting and relaunching the app.</div>
-    </div>
-    <div>
-      <div class="faq-q">How do I activate annotation mode?</div>
-      <div class="faq-a">Press the global shortcut (default: <strong>⌘⌥A</strong>) from any app. The toolbar will appear at the edge of your screen.</div>
-    </div>
-    <div>
-      <div class="faq-q">My purchase isn't restoring.</div>
-      <div class="faq-a">Open ScreenMark → Settings → Subscription and tap <strong>Restore Purchases</strong>. Make sure you're signed in to the same Apple ID used to purchase. If the issue persists, contact us.</div>
-    </div>
-    <div>
-      <div class="faq-q">How do I cancel my subscription?</div>
-      <div class="faq-a">Open <strong>System Settings → Apple ID → Subscriptions</strong> and cancel ScreenMark Pro from there. You'll retain access until the current billing period ends.</div>
-    </div>
-    <div>
-      <div class="faq-q">Where are my exported files saved?</div>
-      <div class="faq-a">Exports default to your Desktop. You can change the export location in ScreenMark Settings.</div>
-    </div>
-  </div>
+        <!-- Contact cards -->
+        <div class="contact-grid">
+          <a class="contact-card" href="https://github.com/ceritmustafa/ScreenMark/issues/new" target="_blank" rel="noopener">
+            <span class="cc-icon">🐛</span>
+            <h3>Report a Bug</h3>
+            <p>Found something unexpected? Open a GitHub issue and we'll investigate.</p>
+            <span class="cc-link">Open GitHub Issue →</span>
+          </a>
+          <a class="contact-card" href="https://github.com/ceritmustafa/ScreenMark/discussions" target="_blank" rel="noopener">
+            <span class="cc-icon">💬</span>
+            <h3>Feature Request</h3>
+            <p>Have an idea? Share it in GitHub Discussions.</p>
+            <span class="cc-link">Start a Discussion →</span>
+          </a>
+          <a class="contact-card" href="mailto:apple@mustafacerit.com">
+            <span class="cc-icon">✉️</span>
+            <h3>Email Support</h3>
+            <p>For App Store or purchase questions, email us directly.</p>
+            <span class="cc-link">apple@mustafacerit.com →</span>
+          </a>
+        </div>
 
-  <div class="contact-box">
-    <h2>Still need help?</h2>
-    <p>We usually respond within one business day.</p>
-    <a href="mailto:apple@mustafacerit.com">apple@mustafacerit.com</a>
-  </div>
-</div>
+        <!-- Permissions + Purchases -->
+        <div class="two-up" style="margin-bottom:48px">
+          <article class="panel">
+            <h2 style="font-size:1.3rem;letter-spacing:-0.3px">Permissions</h2>
+            <div class="accent-rule"></div>
+            <ul class="info-list">
+              <li>
+                <strong>Screen Recording</strong>
+                <p>Required for zoom, freeze frame, recording, and snapshot export. Grant in <strong>System Settings → Privacy &amp; Security → Screen Recording</strong>, then relaunch the app.</p>
+              </li>
+              <li>
+                <strong>Microphone</strong>
+                <p>Required only when you enable microphone capture in a recording session. Grant in <strong>System Settings → Privacy &amp; Security → Microphone</strong>.</p>
+              </li>
+              <li>
+                <strong>Accessibility / Input Monitoring</strong>
+                <p>Used for global hotkeys so the overlay reacts while you work in another app. Grant in <strong>System Settings → Privacy &amp; Security → Accessibility</strong>.</p>
+              </li>
+            </ul>
+          </article>
 
-<footer>
-  <div class="footer-inner">
-    <div class="footer-logo">
-      <svg width="22" height="22" viewBox="0 0 28 28" fill="none">
-        <rect width="28" height="28" rx="7" fill="url(#fg)"/>
-        <path d="M8 14h12M14 8v12" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
-        <circle cx="14" cy="14" r="3" fill="#fff" opacity=".9"/>
-        <defs><linearGradient id="fg" x1="0" y1="0" x2="28" y2="28"><stop stop-color="#5b8def"/><stop offset="1" stop-color="#9b59b6"/></linearGradient></defs>
-      </svg>
-      ScreenMark
+          <article class="panel">
+            <h2 style="font-size:1.3rem;letter-spacing:-0.3px">Purchases &amp; Restore</h2>
+            <div class="accent-rule"></div>
+            <ul class="info-list">
+              <li>
+                <strong>Introductory trial</strong>
+                <p>Eligible new subscribers can start with a 7-day App Store trial on monthly or yearly Pro plans.</p>
+              </li>
+              <li>
+                <strong>Restore purchases</strong>
+                <p>Open <strong>ScreenMark Settings → Purchases</strong> and tap <em>Restore Purchases</em>. Your Pro status will be re-applied immediately.</p>
+              </li>
+              <li>
+                <strong>Lifetime unlock</strong>
+                <p>The lifetime option is a separate one-time App Store purchase — no subscription required, no renewal.</p>
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- System Requirements -->
+        <h2 style="font-size:1.6rem;letter-spacing:-0.5px;margin-bottom:18px">System Requirements</h2>
+        <table class="req-table">
+          <thead>
+            <tr><th>Requirement</th><th>Details</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Operating System</strong></td><td>macOS 13 Ventura or later</td></tr>
+            <tr><td><strong>Chip</strong></td><td>Apple Silicon (M1 or later) and Intel</td></tr>
+            <tr><td><strong>Memory</strong></td><td>4 GB RAM recommended</td></tr>
+            <tr><td><strong>Storage</strong></td><td>Under 10 MB installed</td></tr>
+            <tr><td><strong>Distribution</strong></td><td>Mac App Store</td></tr>
+            <tr><td><strong>Price</strong></td><td>Free (Pro subscription available)</td></tr>
+          </tbody>
+        </table>
+
+        <hr class="section-divider">
+
+        <!-- FAQ -->
+        <h2 style="font-size:1.6rem;letter-spacing:-0.5px;margin-bottom:22px">Frequently Asked Questions</h2>
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              How do I start drawing on my screen?
+              <span class="faq-arrow">▼</span>
+            </div>
+            <div class="faq-a">Click the ScreenMark icon in your menu bar to open the toolbar, then select the pen or any drawing tool. Your cursor changes to confirm drawing mode is active. Draw freely on top of any content.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              How do I clear all annotations?
+              <span class="faq-arrow">▼</span>
+            </div>
+            <div class="faq-a">Use the eraser tool to remove individual strokes, or click the <strong>Clear All</strong> button in the toolbar. You can also press <kbd style="background:var(--canvas-alt);padding:2px 6px;border-radius:5px;font-family:monospace">⌘Z</kbd> to undo the last stroke.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              What is Whiteboard Mode?
+              <span class="faq-arrow">▼</span>
+            </div>
+            <div class="faq-a">Whiteboard Mode covers your screen with a solid white (or black) canvas, turning your display into a virtual whiteboard. Perfect for teaching, explaining concepts, or live sketching without switching apps.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              Does ScreenMark record my screen without me knowing?
+              <span class="faq-arrow">▼</span>
+            </div>
+            <div class="faq-a">No. ScreenMark requests Screen Recording permission to display its overlay — it never captures, records, or saves screenshots unless you explicitly start a recording session. See the <a href="../privacy/" style="color:var(--accent)">Privacy Policy</a> for details.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              Can I use ScreenMark during Zoom, Teams, or Google Meet?
+              <span class="faq-arrow">▼</span>
+            </div>
+            <div class="faq-a">Yes. ScreenMark's overlay is visible to remote participants during screen sharing on Zoom, Teams, Meet, and similar apps. This makes it ideal for remote teaching, live demos, and async walkthroughs.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              Zoom or recording won't start — what should I do?
+              <span class="faq-arrow">▼</span>
+            </div>
+            <div class="faq-a">Confirm Screen Recording permission is granted in <strong>System Settings → Privacy &amp; Security → Screen Recording</strong>. After granting, quit ScreenMark from the menu bar and relaunch it — permissions take effect after a restart.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              Does ScreenMark support multiple monitors?
+              <span class="faq-arrow">▼</span>
+            </div>
+            <div class="faq-a">Yes. The drawing overlay follows your cursor to whichever display is active. You can switch between monitors freely during a session.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              My Pro subscription isn't showing as active — how do I fix it?
+              <span class="faq-arrow">▼</span>
+            </div>
+            <div class="faq-a">Open <strong>ScreenMark Settings → Purchases</strong> and tap <em>Restore Purchases</em>. If the issue persists, ensure you're signed into the correct Apple ID in the App Store, then try restoring again.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              What audio formats does screen recording support?
+              <span class="faq-arrow">▼</span>
+            </div>
+            <div class="faq-a">Recording exports to MP4 or MOV with microphone and/or system audio. GIF recording is silent. Verify your audio toggles in the recording panel before you start to ensure the correct sources are captured.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">
+              How do I quit ScreenMark?
+              <span class="faq-arrow">▼</span>
+            </div>
+            <div class="faq-a">Right-click (or Control-click) the ScreenMark icon in your menu bar and select <strong>Quit</strong>, or use the Quit option inside the toolbar panel.</div>
+          </div>
+
+        </div>
+
+        <hr class="section-divider">
+
+        <h2 style="font-size:1.4rem;letter-spacing:-0.3px;margin-bottom:12px">Still need help?</h2>
+        <p style="margin-bottom:20px">If you didn't find the answer above, open a GitHub issue with your macOS version and a description of the problem. We aim to respond within a few business days.</p>
+        <a href="https://github.com/ceritmustafa/ScreenMark/issues/new" target="_blank" rel="noopener"
+           class="btn-appstore" style="display:inline-flex">
+          Open a GitHub Issue →
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <span class="footer-brand">✏️ ScreenMark</span>
+      <div class="footer-links">
+        <a href="../">Home</a>
+        <a href="../privacy/">Privacy</a>
+        <a href="mailto:apple@mustafacerit.com">apple@mustafacerit.com</a>
+      </div>
+      <span class="footer-copy">© 2025 ScreenMark</span>
     </div>
-    <div class="footer-links">
-      <a href="/">Home</a>
-      <a href="../privacy/">Privacy Policy</a>
-    </div>
-    <span>© 2025 Mustafa Cerit · <a href="mailto:apple@mustafacerit.com">apple@mustafacerit.com</a></span>
-  </div>
-</footer>
+  </footer>
+
+  <script>
+    function toggleFaq(el) {
+      el.closest('.faq-item').classList.toggle('open');
+    }
+  </script>
 
 </body>
 </html>

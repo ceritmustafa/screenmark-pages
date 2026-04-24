@@ -1,448 +1,353 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ScreenMark — The Presentation Overlay for Mac</title>
-  <meta name="description" content="Draw, annotate, freeze, and record directly on your screen. The macOS presentation overlay built for educators, designers, and remote teams." />
-  <meta property="og:title" content="ScreenMark — The Presentation Overlay for Mac" />
-  <meta property="og:description" content="Annotate your screen, freeze moments, collaborate on a whiteboard — all without leaving your presentation." />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="theme-color" content="#09090f" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="assets/site.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ScreenMark – Present, Annotate &amp; Zoom on Your Mac</title>
+  <meta name="description" content="ScreenMark is a macOS menu bar app for live screen annotation, zoom, whiteboard overlay, freeze frame, and recording. Perfect for teachers, presenters, and developers.">
+  <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 
-<!-- ============================================================
-     NAVIGATION
-     ============================================================ -->
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="https://ceritmustafa.github.io/screenmark-pages/" class="nav-logo">
-      <!-- App Icon -->
-      <img src="assets/icon.png" class="nav-logo-icon" width="34" height="34" alt="ScreenMark" />
-      ScreenMark
-    </a>
-
-    <div class="nav-links">
-      <a href="#features">Features</a>
-      <a href="#pricing">Pricing</a>
-      <a href="privacy/">Privacy</a>
-      <a href="support/">Support</a>
-    </div>
-
-    <div class="nav-actions">
-      <a href="https://apps.apple.com/app/id6763122210" class="btn-appstore-nav" target="_blank" rel="noopener">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-        Download
-      </a>
-      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </div>
-</nav>
-
-<div class="nav-mobile" id="navMobile">
-  <a href="#features">Features</a>
-  <a href="#pricing">Pricing</a>
-  <a href="privacy/">Privacy</a>
-  <a href="support/">Support</a>
-  <a href="https://apps.apple.com/app/id6763122210" target="_blank" rel="noopener">↗ Download on Mac App Store</a>
-</div>
-
-<!-- ============================================================
-     HERO
-     ============================================================ -->
-<section class="hero">
-  <div class="hero-glow"></div>
-  <div class="hero-grid-bg"></div>
-
-  <div class="container">
-    <div class="hero-inner">
-
-      <div class="hero-badge fade-up">
-        <span class="badge-dot"></span>
-        Now available on Mac App Store
-      </div>
-
-      <h1 class="hero-headline fade-up">
-        Present with<br />
-        <span class="gradient-text">total clarity</span>
-      </h1>
-
-      <p class="hero-sub fade-up">
-        Draw, annotate, freeze moments, and record — directly on your screen.
-        The overlay built for educators, designers, and remote teams who present live.
-      </p>
-
-      <div class="hero-ctas fade-up">
-        <a href="https://apps.apple.com/app/id6763122210" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-          Download on Mac App Store
-        </a>
-        <a href="#features" class="btn btn-ghost btn-lg">
-          See Features
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-
-      <div class="hero-meta fade-up">
-        <div class="hero-meta-item">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          macOS 15.0+
-        </div>
-        <div class="hero-meta-item">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-          Free to start
-        </div>
-        <div class="hero-meta-item">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-          No subscription required
-        </div>
-      </div>
-
-      <!-- Mock macOS Window -->
-      <div class="hero-window-wrap fade-up">
-        <div class="window-outer-glow"></div>
-        <div class="mac-window">
-          <div class="mac-titlebar">
-            <div class="mac-dots">
-              <div class="mac-dot close"></div>
-              <div class="mac-dot min"></div>
-              <div class="mac-dot max"></div>
-            </div>
-            <div class="mac-title-text">Keynote — Q3 Business Review.key</div>
-          </div>
-
-          <div class="mac-content">
-            <!-- Slide content -->
-            <div class="slide-frame">
-              <div class="slide-header">
-                <div class="slide-eyebrow">Q3 Business Review</div>
-                <div class="slide-title">Revenue Growth</div>
-              </div>
-
-              <div class="slide-chart-area">
-                <div class="s-bar" style="height:38%;background:linear-gradient(to top,#3a4f8a,#5b8def88);"></div>
-                <div class="s-bar" style="height:52%;background:linear-gradient(to top,#3a4f8a,#5b8def88);"></div>
-                <div class="s-bar" style="height:61%;background:linear-gradient(to top,#3a4f8a,#5b8def88);"></div>
-                <div class="s-bar" style="height:48%;background:linear-gradient(to top,#3a4f8a,#5b8def88);"></div>
-                <div class="s-bar" style="height:74%;background:linear-gradient(to top,#5b3a8a,#9b59b688);"></div>
-                <div class="s-bar" style="height:88%;background:linear-gradient(to top,#7c3a8a,#9b59b6cc);box-shadow:0 0 12px rgba(155,89,182,.5);"></div>
-                <div class="s-bar" style="height:68%;background:linear-gradient(to top,#3a4f8a,#5b8def88);"></div>
-                <div class="s-bar" style="height:92%;background:linear-gradient(to top,#5b3a8a,#9b59b6dd);box-shadow:0 0 14px rgba(155,89,182,.55);"></div>
-              </div>
-
-              <div class="slide-legend">
-                <div class="legend-item">
-                  <div class="legend-dot" style="background:#5b8def;"></div>
-                  Monthly Revenue
-                </div>
-                <div class="legend-item">
-                  <div class="legend-dot" style="background:#9b59b6;"></div>
-                  Target
-                </div>
-              </div>
-            </div>
-
-            <!-- SVG Annotations Overlay -->
-            <svg class="window-annotations" viewBox="0 0 880 460" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
-              <!-- Highlight circle around the peak bar -->
-              <circle cx="650" cy="195" r="38" fill="none" stroke="#ff5f57" stroke-width="2.5" stroke-dasharray="5 3" opacity="0.85"/>
-              <!-- Arrow pointing to circle -->
-              <path d="M 530 155 C 560 140, 600 148, 615 168" fill="none" stroke="#5b8def" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
-              <!-- Text annotation label -->
-              <rect x="410" y="130" width="118" height="28" rx="6" fill="rgba(16,16,28,0.88)" stroke="rgba(91,141,239,0.35)" stroke-width="1"/>
-              <text x="469" y="148" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" fill="#aac4ff">↑ 42% MoM</text>
-              <!-- Freehand underline on slide title area -->
-              <path d="M 280 93 C 320 97, 380 91, 420 95 C 460 99, 500 93, 540 96" fill="none" stroke="#9b59b6" stroke-width="2.2" stroke-linecap="round" opacity="0.7"/>
-              <!-- Arrowhead marker -->
-              <defs>
-                <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-                  <path d="M0,0 L0,6 L8,3 z" fill="#5b8def"/>
-                </marker>
-              </defs>
-            </svg>
-
-            <!-- ScreenMark Overlay Toolbar -->
-            <div class="sm-toolbar">
-              <div class="sm-tool active" title="Pen">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>
-              </div>
-              <div class="sm-tool" title="Circle">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="9"/></svg>
-              </div>
-              <div class="sm-tool" title="Arrow">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </div>
-              <div class="sm-tool" title="Text">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></svg>
-              </div>
-              <div style="height:1px;background:rgba(255,255,255,.08);margin:2px 0;"></div>
-              <div class="sm-tool" title="Clear">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 6h18M19 6l-1 14H6L5 6M10 11v6M14 11v6M8 6V4h8v2"/></svg>
-              </div>
-            </div>
-
-            <!-- Recording indicator -->
-            <div class="rec-indicator">
-              <div class="rec-dot"></div>
-              REC 00:42
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /mock window -->
-
-    </div>
-  </div>
-</section>
-
-<hr class="divider" />
-
-<!-- ============================================================
-     FEATURES
-     ============================================================ -->
-<section id="features">
-  <div class="container">
-    <div class="section-head center fade-up">
-      <span class="section-tag">Features</span>
-      <h2>Everything you need to present with confidence</h2>
-      <p>ScreenMark sits invisibly over every app, activating instantly with global shortcuts — no window switching, no focus stealing.</p>
-    </div>
-
-    <div class="features-grid">
-
-      <div class="feat-card fade-up">
-        <div class="feat-icon">🎨</div>
-        <h3>Draw on Screen</h3>
-        <p>Annotate anything live with a natural pen, shapes, arrows, and text. Pick from a rich color palette. Undo, redo, or clear with a single keystroke.</p>
-      </div>
-
-      <div class="feat-card fade-up">
-        <div class="feat-icon">❄️</div>
-        <h3>Freeze &amp; Snip</h3>
-        <p>Freeze the entire display mid-presentation to annotate a static snapshot. Snip any region and export as PNG — perfect for sharing your annotated moments.</p>
-      </div>
-
-      <div class="feat-card fade-up">
-        <div class="feat-icon">🔎</div>
-        <h3>Live Zoom</h3>
-        <p>Magnify any part of your screen in real time. The zoom lens follows your cursor so your audience never loses track of where you are.</p>
-      </div>
-
-      <div class="feat-card fade-up">
-        <div class="feat-icon">⬜</div>
-        <h3>Instant Whiteboard</h3>
-        <p>Launch a blank whiteboard in one keystroke. Pair it with a built-in countdown timer (5, 10, or 15 minutes) for group activities and timed exercises.</p>
-      </div>
-
-      <div class="feat-card fade-up">
-        <div class="feat-icon">🎥</div>
-        <h3>Screen Recording</h3>
-        <p>Record your screen with live annotations baked in. Export as video or GIF. Everything you draw, highlight, and annotate appears in the final recording.</p>
-      </div>
-
-      <div class="feat-card fade-up">
-        <div class="feat-icon">⌨️</div>
-        <h3>Global Shortcuts</h3>
-        <p>Every action is one keystroke away — system-wide, no matter which app is in focus. Customize hotkeys to match your personal workflow.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<hr class="divider" />
-
-<!-- ============================================================
-     PRICING
-     ============================================================ -->
-<section id="pricing" class="pricing-section">
-  <div class="container">
-    <div class="section-head center fade-up">
-      <span class="section-tag">Pricing</span>
-      <h2>Simple, transparent pricing</h2>
-      <p>Start free. Upgrade when you need more. No surprise fees, no feature-gating the basics.</p>
-    </div>
-
-    <div class="pricing-grid">
-
-      <!-- Monthly -->
-      <div class="price-card fade-up">
-        <div class="price-tier">Monthly</div>
-        <div>
-          <div class="price-amount-row">
-            <span class="price-dollar">$</span>
-            <span class="price-number">4.99</span>
-          </div>
-          <div class="price-period">per month</div>
-        </div>
-        <p class="price-desc">Full Pro access, billed monthly. Cancel any time with no penalty.</p>
-        <ul class="price-features">
-          <li class="price-feat">
-            <span class="price-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M2 6l3 3 5-5"/></svg></span>
-            Unlimited annotations
-          </li>
-          <li class="price-feat">
-            <span class="price-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M2 6l3 3 5-5"/></svg></span>
-            Freeze &amp; Capture + Snip (PNG)
-          </li>
-          <li class="price-feat">
-            <span class="price-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M2 6l3 3 5-5"/></svg></span>
-            Whiteboard + countdown timer
-          </li>
-          <li class="price-feat">
-            <span class="price-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M2 6l3 3 5-5"/></svg></span>
-            Screen recording (video &amp; GIF)
-          </li>
-          <li class="price-feat">
-            <span class="price-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M2 6l3 3 5-5"/></svg></span>
-            Custom global shortcuts
-          </li>
-        </ul>
-        <div class="price-cta">
-          <a href="https://apps.apple.com/app/id6763122210" class="btn btn-ghost" target="_blank" rel="noopener">Get Started</a>
-        </div>
-      </div>
-
-      <!-- Yearly (Best Value) -->
-      <div class="price-card best fade-up">
-        <div class="price-badge">⭐ Best Value</div>
-        <div class="price-tier">Yearly</div>
-        <div>
-          <div class="price-amount-row">
-            <span class="price-dollar">$</span>
-            <span class="price-number gradient-text">29.99</span>
-          </div>
-          <div class="price-period" style="display:flex;align-items:center;gap:8px;">
-            per year
-            <span class="savings-tag">Save 50%</span>
-          </div>
-        </div>
-        <p class="price-desc">Full Pro access for the whole year — equivalent to just $2.50/mo. The smartest way to subscribe.</p>
-        <ul class="price-features">
-          <li class="price-feat">
-            <span class="price-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M2 6l3 3 5-5"/></svg></span>
-            Everything in Monthly
-          </li>
-          <li class="price-feat">
-            <span class="price-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M2 6l3 3 5-5"/></svg></span>
-            Priority support
-          </li>
-          <li class="price-feat">
-            <span class="price-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M2 6l3 3 5-5"/></svg></span>
-            Early access to new features
-          </li>
-          <li class="price-feat">
-            <span class="price-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M2 6l3 3 5-5"/></svg></span>
-            Cancel any time
-          </li>
-        </ul>
-        <div class="price-cta">
-          <a href="https://apps.apple.com/app/id6763122210" class="btn btn-primary" target="_blank" rel="noopener">Get Best Value</a>
-        </div>
-      </div>
-
-      <!-- Lifetime -->
-      <div class="price-card fade-up">
-        <div class="price-tier">Lifetime</div>
-        <div>
-          <div class="price-amount-row">
-            <span class="price-dollar">$</span>
-            <span class="price-number">79.99</span>
-          </div>
-          <div class="price-period">one-time payment</div>
-        </div>
-        <p class="price-desc">Pay once, own it forever. Every future update included. Perfect for power users and professionals.</p>
-        <ul class="price-features">
-          <li class="price-feat">
-            <span class="price-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M2 6l3 3 5-5"/></svg></span>
-            Everything in Yearly
-          </li>
-          <li class="price-feat">
-            <span class="price-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M2 6l3 3 5-5"/></svg></span>
-            Lifetime updates
-          </li>
-          <li class="price-feat">
-            <span class="price-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M2 6l3 3 5-5"/></svg></span>
-            No recurring fees — ever
-          </li>
-          <li class="price-feat">
-            <span class="price-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M2 6l3 3 5-5"/></svg></span>
-            VIP support access
-          </li>
-          <li class="price-feat">
-            <span class="price-check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M2 6l3 3 5-5"/></svg></span>
-            All future feature unlocks
-          </li>
-        </ul>
-        <div class="price-cta">
-          <a href="https://apps.apple.com/app/id6763122210" class="btn btn-ghost" target="_blank" rel="noopener">Get Lifetime Access</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     FOOTER
-     ============================================================ -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-inner">
-      <a href="https://ceritmustafa.github.io/screenmark-pages/" class="footer-brand">
-        <img src="assets/icon.png" width="28" height="28" alt="ScreenMark" style="border-radius:7px;" />
+  <!-- ── NAV ── -->
+  <header class="site-header">
+    <div class="shell">
+      <a class="brand" href="./">
+        <span class="brand-mark">✏️</span>
         ScreenMark
       </a>
-
-      <div class="footer-center">
-        <p class="footer-copy">&copy; 2026 ScreenMark. All rights reserved.</p>
-        <p class="footer-copy">Built for macOS with ❤️ — <a href="https://apps.apple.com/app/id6763122210" target="_blank" rel="noopener">Mac App Store</a></p>
-      </div>
-
-      <nav class="footer-links">
-        <a href="#features">Features</a>
-        <a href="#pricing">Pricing</a>
-        <a href="privacy/">Privacy</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#features" class="nav-hide-sm">Features</a>
+        <a href="#screenshots" class="nav-hide-sm">Screenshots</a>
+        <a href="#pricing" class="nav-hide-sm">Pricing</a>
         <a href="support/">Support</a>
+        <a href="#download" class="appstore-nav">Download Free</a>
       </nav>
     </div>
+  </header>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">✦ Now on Mac App Store</span>
+        <h1>Present with<br><em>total clarity.</em></h1>
+        <p>ScreenMark is your menu bar companion for live annotation, zoom, whiteboard, freeze&nbsp;frame, and recording — all without leaving your flow.</p>
+        <div class="cta-row">
+          <a href="#download" class="btn-appstore">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            Download on Mac App Store
+          </a>
+          <a href="#screenshots" class="btn-ghost">See screenshots →</a>
+        </div>
+      </div>
+
+      <!-- Hero screenshot with macOS window chrome -->
+      <div class="hero-screenshot-wrap">
+        <div class="macos-window">
+          <div class="macos-titlebar">
+            <div class="macos-dot red"></div>
+            <div class="macos-dot yellow"></div>
+            <div class="macos-dot green"></div>
+          </div>
+          <img src="assets/screenshots/ss3.png"
+               alt="ScreenMark in use – live annotation overlay on Mac"
+               loading="eager">
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROOF BAR ── -->
+    <div class="proof-bar">
+      <div class="proof-item"><span class="pi-icon">🍎</span> Built for macOS</div>
+      <div class="proof-item"><span class="pi-icon">🔒</span> 100 % local — no data leaves your Mac</div>
+      <div class="proof-item"><span class="pi-icon">⚡</span> Lives in your menu bar</div>
+      <div class="proof-item"><span class="pi-icon">🆓</span> Free to download</div>
+      <div class="proof-item"><span class="pi-icon">🖥️</span> Apple Silicon &amp; Intel</div>
+    </div>
+
+    <!-- ── HERO STATS ── -->
+    <div class="hero-metrics">
+      <div class="metric">
+        <strong>Free</strong>
+        <span>Core tools, no credit card needed</span>
+      </div>
+      <div class="metric">
+        <strong>7-day trial</strong>
+        <span>Introductory offer for Pro subscribers</span>
+      </div>
+      <div class="metric">
+        <strong>No account</strong>
+        <span>Local-first, works offline</span>
+      </div>
+    </div>
+
+    <!-- ── FEATURES ── -->
+    <section class="section" id="features">
+      <div class="shell">
+        <div class="section-header">
+          <span class="eyebrow">Features</span>
+          <h2>Every tool you need to present confidently</h2>
+          <p>From a quick annotation to a full recording session — ScreenMark keeps it all one click away.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="card">
+            <div class="card-icon blue">🔍</div>
+            <h3>Live Zoom</h3>
+            <p>Magnify any area of your screen in real time. Keep viewers focused without moving windows or resizing anything.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon purple">✏️</div>
+            <h3>Screen Annotation</h3>
+            <p>Draw, box, arrow, type, blur, or spotlight directly over live content. Annotations disappear the moment you stop — or stick around if you want.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon teal">❄️</div>
+            <h3>Freeze Frame</h3>
+            <p>Pause the display on any moment. Switch windows freely while your audience sees a frozen snapshot.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon orange">🖊️</div>
+            <h3>Whiteboard Overlay</h3>
+            <p>Cover your screen with a blank canvas and sketch freely. Ideal for teachers, workshop facilitators, and live code walkthroughs.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon green">⏱️</div>
+            <h3>Break Timer</h3>
+            <p>Show an on-screen countdown for breaks, exams, or Pomodoro blocks. Fully customisable, floats above your content.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon pink">🎬</div>
+            <h3>Screen Recording</h3>
+            <p>Capture your screen with microphone or system audio. Export to MP4 or MOV. GIF recording supported for silent demos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SCREENSHOT GALLERY ── -->
+    <section class="gallery-section" id="screenshots">
+      <div class="shell">
+        <div class="section-header">
+          <span class="eyebrow">Screenshots</span>
+          <h2>See ScreenMark in action</h2>
+          <p>Scroll through the gallery to explore the annotation overlay, whiteboard, zoom, and recording tools.</p>
+        </div>
+      </div>
+      <div class="gallery-scroll-wrap">
+        <div class="gallery-track">
+          <div class="gallery-item" onclick="openLightbox('assets/screenshots/ss3.png')">
+            <img src="assets/screenshots/ss3.png" alt="ScreenMark annotation overlay" loading="lazy">
+            <div class="gallery-caption">Live annotation overlay</div>
+          </div>
+          <div class="gallery-item" onclick="openLightbox('assets/screenshots/ss4.png')">
+            <img src="assets/screenshots/ss4.png" alt="ScreenMark zoom and annotation" loading="lazy">
+            <div class="gallery-caption">Zoom &amp; drawing tools</div>
+          </div>
+          <div class="gallery-item" onclick="openLightbox('assets/screenshots/ss5.png')">
+            <img src="assets/screenshots/ss5.png" alt="ScreenMark whiteboard mode" loading="lazy">
+            <div class="gallery-caption">Whiteboard overlay</div>
+          </div>
+          <div class="gallery-item" onclick="openLightbox('assets/screenshots/ss6.png')">
+            <img src="assets/screenshots/ss6.png" alt="ScreenMark recording session" loading="lazy">
+            <div class="gallery-caption">Recording session</div>
+          </div>
+          <div class="gallery-item" onclick="openLightbox('assets/screenshots/ss1.png')" style="width:320px">
+            <img src="assets/screenshots/ss1.png" alt="ScreenMark menu bar panel" loading="lazy">
+            <div class="gallery-caption">Menu bar quick access</div>
+          </div>
+          <div class="gallery-item" onclick="openLightbox('assets/screenshots/ss2.png')" style="width:320px">
+            <img src="assets/screenshots/ss2.png" alt="ScreenMark toolbar detail" loading="lazy">
+            <div class="gallery-caption">Toolbar &amp; controls</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SPOTLIGHT ROWS ── -->
+    <section class="spotlight-section">
+      <div class="spotlight-row">
+        <div class="spotlight-content">
+          <span class="spotlight-tag">Whiteboard Overlay</span>
+          <h2>A blank canvas over your entire display</h2>
+          <p>Activate Whiteboard Mode and your screen becomes a full drawing surface — perfect for teaching, live code walkthroughs, or any session where a visual explanation beats a slide deck.</p>
+          <p>Switch between white and black backgrounds instantly. Annotations persist so you can build diagrams step by step.</p>
+          <div class="pill-list">
+            <span class="pill">One-click activation</span>
+            <span class="pill">White or black background</span>
+            <span class="pill">Persistent annotations</span>
+            <span class="pill">Full-screen coverage</span>
+          </div>
+        </div>
+        <div class="spotlight-visual">
+          <img src="assets/screenshots/ss5.png" alt="ScreenMark whiteboard mode">
+        </div>
+      </div>
+
+      <div class="spotlight-row flip">
+        <div class="spotlight-content">
+          <span class="spotlight-tag">Annotation Tools</span>
+          <h2>Every tool a presenter could need</h2>
+          <p>Pen, highlighter, eraser, shapes, arrows, and text — all accessible in one click. Customise stroke width and colour to match your content.</p>
+          <p>Annotations render at full Retina resolution, crystal-clear on any Mac display including Pro Display XDR.</p>
+          <div class="pill-list">
+            <span class="pill">Freehand pen</span>
+            <span class="pill">Highlighter</span>
+            <span class="pill">Shapes &amp; arrows</span>
+            <span class="pill">Text labels</span>
+            <span class="pill">Blur &amp; spotlight</span>
+            <span class="pill">Retina rendering</span>
+          </div>
+        </div>
+        <div class="spotlight-visual">
+          <img src="assets/screenshots/ss4.png" alt="ScreenMark annotation tools">
+        </div>
+      </div>
+
+      <div class="spotlight-row">
+        <div class="spotlight-content">
+          <span class="spotlight-tag">Screen Recording</span>
+          <h2>Capture everything, share instantly</h2>
+          <p>Record your screen with mic audio, system audio, or both. Export walkthroughs as MP4 or MOV for tutorials, bug reports, and async reviews.</p>
+          <p>Silent GIF recording exports clips directly to your clipboard for instant paste into Slack, Notion, or GitHub issues.</p>
+          <div class="pill-list">
+            <span class="pill">MP4 &amp; MOV export</span>
+            <span class="pill">GIF recording</span>
+            <span class="pill">Mic &amp; system audio</span>
+            <span class="pill">Annotated snapshots</span>
+          </div>
+        </div>
+        <div class="spotlight-visual">
+          <img src="assets/screenshots/ss6.png" alt="ScreenMark recording">
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PRICING ── -->
+    <section class="section section-alt section-border-top" id="pricing">
+      <div class="shell">
+        <div class="section-header">
+          <span class="eyebrow">Pricing</span>
+          <h2>Free to start. Pro when you&rsquo;re ready.</h2>
+          <p>Download for free and upgrade only when you need the advanced tools.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h3>Free</h3>
+            <p class="price-tag">$0 <span>forever</span></p>
+            <p>Menu bar controls, essential annotation overlays, and the non-paying experience whenever you need it.</p>
+          </article>
+          <article class="price-card highlight">
+            <span class="eyebrow">Best value</span>
+            <h3>Pro Yearly</h3>
+            <p class="price-tag">$39.99 <span>/ year</span></p>
+            <p>Full Pro feature set. Eligible new subscribers can start with a <strong>7-day introductory App Store trial</strong>.</p>
+          </article>
+          <article class="price-card">
+            <h3>Monthly or Lifetime</h3>
+            <p class="price-tag">$4.99 <span>/ month</span></p>
+            <p class="price-tag" style="font-size:1.4rem">$59.99 <span>lifetime</span></p>
+            <p>Monthly includes the same introductory-trial eligibility. Lifetime is a one-time App Store purchase — no subscription.</p>
+          </article>
+        </div>
+        <p class="legal-note" style="margin-top:20px; text-align:center">
+          App Store subscription availability, introductory offer eligibility, pricing tiers, and local currency conversions are managed by Apple.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── TRUST CARDS ── -->
+    <section class="section">
+      <div class="shell cards-grid">
+        <article class="card">
+          <span class="pill warm">Permissions</span>
+          <h3 style="margin-top:14px">Why the app asks for access</h3>
+          <p>Screen Recording powers zoom, freeze, snip, and recording. Microphone access is used only when you choose to record mic audio.</p>
+        </article>
+        <article class="card">
+          <span class="pill cool">Privacy</span>
+          <h3 style="margin-top:14px">Local-first by design</h3>
+          <p>No account required. Nothing you draw or capture is uploaded to a ScreenMark server. Purchases are handled entirely by the App Store.</p>
+        </article>
+        <article class="card">
+          <span class="pill warm">Support</span>
+          <h3 style="margin-top:14px">Help before and after launch</h3>
+          <p>Permission guidance, restore-purchase steps, and contact details are on the <a href="support/" style="color:var(--accent);font-weight:600">support page</a>.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── CTA BAND ── -->
+    <section class="cta-band" id="download">
+      <h2>Start presenting for free</h2>
+      <p>ScreenMark is free to download on the Mac App Store. No account, no subscription required to get started.</p>
+      <a href="#" class="btn-white">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Download on Mac App Store
+      </a>
+    </section>
+
+    <!-- ── REQUIREMENTS STRIP ── -->
+    <div class="req-strip">
+      <div class="req-item">
+        <div class="req-label">Platform</div>
+        <div class="req-value">macOS</div>
+      </div>
+      <div class="req-item">
+        <div class="req-label">Minimum OS</div>
+        <div class="req-value">macOS 13 Ventura</div>
+      </div>
+      <div class="req-item">
+        <div class="req-label">Chip</div>
+        <div class="req-value">Apple Silicon &amp; Intel</div>
+      </div>
+      <div class="req-item">
+        <div class="req-label">Price</div>
+        <div class="req-value">Free</div>
+      </div>
+      <div class="req-item">
+        <div class="req-label">Category</div>
+        <div class="req-value">Productivity</div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <div class="shell">
+      <span class="footer-brand">✏️ ScreenMark</span>
+      <div class="footer-links">
+        <a href="support/">Support</a>
+        <a href="privacy/">Privacy</a>
+        <a href="mailto:apple@mustafacerit.com">apple@mustafacerit.com</a>
+        <a href="https://github.com/ceritmustafa/ScreenMark" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <span class="footer-copy">© 2025 ScreenMark</span>
+    </div>
+  </footer>
+
+  <!-- ── LIGHTBOX ── -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img id="lightbox-img" src="" alt="">
   </div>
-</footer>
 
-<script>
-  // Mobile hamburger
-  const btn = document.getElementById('hamburger');
-  const menu = document.getElementById('navMobile');
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('open');
-  });
-  // Close on link click
-  menu.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => menu.classList.remove('open'));
-  });
-
-  // Scroll fade-in animation
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        observer.unobserve(e.target);
-      }
+  <script>
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeLightbox();
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-
-  document.querySelectorAll('.fade-up').forEach((el, i) => {
-    el.style.transitionDelay = `${(i % 4) * 0.08}s`;
-    observer.observe(el);
-  });
-</script>
+  </script>
 
 </body>
 </html>

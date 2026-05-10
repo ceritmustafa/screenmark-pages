@@ -13,7 +13,7 @@
   <header class="site-header">
     <div class="shell">
       <a class="brand" href="./">
-        <img src="assets/app-icon.png" alt="ScreenMark" style="width:32px;height:32px;border-radius:8px;flex-shrink:0">
+        <span class="brand-mark">✏️</span>
         ScreenMark
       </a>
       <nav class="nav" aria-label="Primary">
@@ -77,6 +77,10 @@
         <strong>7-day trial</strong>
         <span>Introductory offer for Pro subscribers</span>
       </div>
+      <div class="metric">
+        <strong>No account</strong>
+        <span>Local-first, works offline</span>
+      </div>
     </div>
 
     <!-- ── FEATURES ── -->
@@ -91,32 +95,42 @@
           <div class="card">
             <div class="card-icon blue">🔍</div>
             <h3>Live Zoom</h3>
-            <p>Magnify any area of your screen in real time. Keep viewers focused without moving windows or resizing anything.</p>
+            <p>Magnify any area of your screen in real time. Classic zoom or interactive live lens — keep viewers focused without resizing anything. <span class="pro-badge">Pro</span></p>
           </div>
           <div class="card">
             <div class="card-icon purple">✏️</div>
-            <h3>Screen Annotation</h3>
-            <p>Draw, box, arrow, type, blur, or spotlight directly over live content. Annotations disappear the moment you stop — or stick around if you want.</p>
+            <h3>Draw &amp; Annotate</h3>
+            <p>Pen, arrows, shapes, text, eraser, highlighter, blur, and spotlight — with S/M/L/XL stroke sizes. In-place text editing with drag-to-move.</p>
           </div>
           <div class="card">
             <div class="card-icon teal">❄️</div>
-            <h3>Freeze Frame</h3>
-            <p>Pause the display on any moment. Switch windows freely while your audience sees a frozen snapshot.</p>
+            <h3>Freeze Frame &amp; Snip</h3>
+            <p>Pause the display on any moment. Annotate the frozen frame or drag-to-snip a region and save it to clipboard or disk.</p>
           </div>
           <div class="card">
             <div class="card-icon orange">🖊️</div>
             <h3>Whiteboard Overlay</h3>
-            <p>Cover your screen with a blank canvas and sketch freely. Ideal for teachers, workshop facilitators, and live code walkthroughs.</p>
+            <p>Cover your screen with a blank whiteboard or blackboard and sketch freely. Ideal for teachers, workshop facilitators, and live demos.</p>
           </div>
           <div class="card">
             <div class="card-icon green">⏱️</div>
-            <h3>Break Timer</h3>
-            <p>Show an on-screen countdown for breaks, exams, or Pomodoro blocks. Fully customisable, floats above your content.</p>
+            <h3>Break Time</h3>
+            <p>Set a countdown with a beautiful 3-ring Hours/Minutes/Seconds display. Customisable background presets, system clock overlay, and audio alerts.</p>
           </div>
           <div class="card">
             <div class="card-icon pink">🎬</div>
             <h3>Screen Recording</h3>
-            <p>Capture your screen with microphone or system audio. Export to MP4 or MOV. GIF recording supported for silent demos.</p>
+            <p>Capture your session to MP4 with system audio + microphone mixed in real time. All annotations baked in. <span class="pro-badge">Pro</span></p>
+          </div>
+          <div class="card">
+            <div class="card-icon yellow">🔦</div>
+            <h3>Cursor Flashlight</h3>
+            <p>Dim everything except a soft circle around your cursor — focus the audience's gaze instantly. Adjustable radius and edge softness. <span class="pro-badge">Pro</span></p>
+          </div>
+          <div class="card">
+            <div class="card-icon indigo">🖱️</div>
+            <h3>Cursor Highlight</h3>
+            <p>Spotlight your pointer with a colored ring in circle, squircle, or rhombus shape. Hides when idle to keep things clean. <span class="pro-badge">Pro</span></p>
           </div>
         </div>
       </div>
@@ -165,57 +179,76 @@
     <section class="spotlight-section">
       <div class="spotlight-row">
         <div class="spotlight-content">
-          <span class="spotlight-tag">Whiteboard Overlay</span>
-          <h2>A blank canvas over your entire display</h2>
-          <p>Activate Whiteboard Mode and your screen becomes a full drawing surface — perfect for teaching, live code walkthroughs, or any session where a visual explanation beats a slide deck.</p>
-          <p>Switch between white and black backgrounds instantly. Annotations persist so you can build diagrams step by step.</p>
+          <span class="spotlight-tag">Draw &amp; Annotate</span>
+          <h2>Every annotation tool you'll ever need</h2>
+          <p>Pen, highlighter, arrows, shapes, blur, spotlight, eraser, and in-place text — all accessible in one click. Drag text labels to reposition them. S/M/L/XL stroke sizes.</p>
+          <p>Annotations render at full Retina resolution — crystal-clear on any Mac display including Pro Display XDR.</p>
           <div class="pill-list">
-            <span class="pill">One-click activation</span>
-            <span class="pill">White or black background</span>
-            <span class="pill">Persistent annotations</span>
-            <span class="pill">Full-screen coverage</span>
+            <span class="pill">Freehand pen</span>
+            <span class="pill">Highlighter</span>
+            <span class="pill">Shapes &amp; arrows</span>
+            <span class="pill">In-place text</span>
+            <span class="pill">Eraser</span>
+            <span class="pill">Blur &amp; spotlight</span>
           </div>
         </div>
         <div class="spotlight-visual">
-          <img src="assets/screenshots/ss5.png" alt="ScreenMark whiteboard mode">
+          <img src="assets/screenshots/ss4.png" alt="ScreenMark annotation tools" data-placeholder="true">
         </div>
       </div>
 
       <div class="spotlight-row flip">
         <div class="spotlight-content">
-          <span class="spotlight-tag">Annotation Tools</span>
-          <h2>Every tool a presenter could need</h2>
-          <p>Pen, highlighter, eraser, shapes, arrows, and text — all accessible in one click. Customise stroke width and colour to match your content.</p>
-          <p>Annotations render at full Retina resolution, crystal-clear on any Mac display including Pro Display XDR.</p>
+          <span class="spotlight-tag">Cursor Tools <span class="pro-badge">Pro</span></span>
+          <h2>Keep every eye on what matters</h2>
+          <p><strong>Cursor Flashlight</strong> dims everything except a soft circle around your cursor — instantly focusing your audience on the right spot. Adjustable radius, edge softness, and dimming level.</p>
+          <p><strong>Cursor Highlight</strong> adds a colored ring around your pointer in circle, squircle, or rhombus shape — so no one ever loses track of where you are.</p>
           <div class="pill-list">
-            <span class="pill">Freehand pen</span>
-            <span class="pill">Highlighter</span>
-            <span class="pill">Shapes &amp; arrows</span>
-            <span class="pill">Text labels</span>
-            <span class="pill">Blur &amp; spotlight</span>
-            <span class="pill">Retina rendering</span>
+            <span class="pill">Flashlight mode</span>
+            <span class="pill">Highlight ring</span>
+            <span class="pill">Adjustable radius</span>
+            <span class="pill">Auto-hides when idle</span>
+            <span class="pill">⌘⇧L / ⌘⇧H shortcuts</span>
           </div>
         </div>
         <div class="spotlight-visual">
-          <img src="assets/screenshots/ss4.png" alt="ScreenMark annotation tools">
+          <img src="assets/screenshots/ss3.png" alt="ScreenMark cursor tools" data-placeholder="true">
         </div>
       </div>
 
       <div class="spotlight-row">
         <div class="spotlight-content">
-          <span class="spotlight-tag">Screen Recording</span>
-          <h2>Capture everything, share instantly</h2>
-          <p>Record your screen with mic audio, system audio, or both. Export walkthroughs as MP4 or MOV for tutorials, bug reports, and async reviews.</p>
-          <p>Silent GIF recording exports clips directly to your clipboard for instant paste into Slack, Notion, or GitHub issues.</p>
+          <span class="spotlight-tag">Break Time</span>
+          <h2>Beautiful countdown — your way</h2>
+          <p>Launch a full-screen timer with a 3-ring Hours / Minutes / Seconds display. Each ring counts down independently so the audience can see exactly how long is left at a glance.</p>
+          <p>Choose from aurora, dunes, ocean, forest, and night sky backgrounds. System clock shown top-left for at-a-glance awareness.</p>
           <div class="pill-list">
-            <span class="pill">MP4 &amp; MOV export</span>
-            <span class="pill">GIF recording</span>
-            <span class="pill">Mic &amp; system audio</span>
-            <span class="pill">Annotated snapshots</span>
+            <span class="pill">3-ring H/M/S display</span>
+            <span class="pill">Visual background presets</span>
+            <span class="pill">System clock overlay</span>
+            <span class="pill">Audio alerts</span>
           </div>
         </div>
         <div class="spotlight-visual">
-          <img src="assets/screenshots/ss6.png" alt="ScreenMark recording">
+          <img src="assets/screenshots/ss5.png" alt="ScreenMark break time" data-placeholder="true">
+        </div>
+      </div>
+
+      <div class="spotlight-row flip">
+        <div class="spotlight-content">
+          <span class="spotlight-tag">Screen Recording <span class="pro-badge">Pro</span></span>
+          <h2>Capture everything, share instantly</h2>
+          <p>Record your screen to MP4 with system audio and microphone mixed together in real time. All annotations are baked into the video so nothing gets lost.</p>
+          <p>Snip a region and save it to clipboard or disk with a single drag. Annotated snapshots export at full Retina quality.</p>
+          <div class="pill-list">
+            <span class="pill">MP4 export</span>
+            <span class="pill">System + mic audio</span>
+            <span class="pill">Annotations included</span>
+            <span class="pill">Snip to clipboard</span>
+          </div>
+        </div>
+        <div class="spotlight-visual">
+          <img src="assets/screenshots/ss6.png" alt="ScreenMark recording" data-placeholder="true">
         </div>
       </div>
     </section>
@@ -313,9 +346,7 @@
   <!-- ── FOOTER ── -->
   <footer class="site-footer">
     <div class="shell">
-      <a class="footer-brand" href="./" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none">
-        <img src="assets/app-icon.png" alt="" style="width:22px;height:22px;border-radius:5px"> ScreenMark
-      </a>
+      <span class="footer-brand">✏️ ScreenMark</span>
       <div class="footer-links">
         <a href="support/">Support</a>
         <a href="privacy/">Privacy</a>
